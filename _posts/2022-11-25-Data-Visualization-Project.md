@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CO2 emissions and Natural Disasters"
+title: "CO2 Emissions and Natural Disasters"
 categories: misc
 ---
 

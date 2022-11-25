@@ -3,7 +3,7 @@ author:
   name: Nitharsan Sivakanthan
   email: nith.sivakanthan@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  A showcase of my work.
+  A showcase of my work in data science. 
 
 show_excerpts: false # set to true to show excerpts on the homepage
 

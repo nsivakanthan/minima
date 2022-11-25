@@ -25,6 +25,6 @@ minima:
 # Build settings
 theme: minima
 
-plugins:
+#plugins:
  #- jekyll-feed
- - jekyll-seo-tag
+ #- jekyll-seo-tag

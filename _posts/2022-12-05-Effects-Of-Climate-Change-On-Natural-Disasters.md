@@ -39,7 +39,7 @@ Fig 2: Yearly CO2 Emissions for Countries
 ### The Human Cost: Frequency and Severity of Natural Disasters - 
 Fig 3 shows us an upward trend in the count of disasters over time in the US. It is important to note, Fig 3 shows us the counts of disasters from 1980 to 2022, while we can see from Fig 2 the upward trend in CO2 emissions starts decades before this. Regardless, both trends are consistent even when focused on matching time periods. From this, there seems to be a strong relationship between global CO2 emissions and the frequency of natural disasters in the US. The largest attributor to the count of natural disasters over time in the US are severe storms. We can compare the counts of natural disasters to the counts of other types of natural disasters as well. 
  
-{% include_relative fig3.html}
+{% includes_relative fig3.html}
 
 Fig 3: Count of Disasters in the US per Year 
 

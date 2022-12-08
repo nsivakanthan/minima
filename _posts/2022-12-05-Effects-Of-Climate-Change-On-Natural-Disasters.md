@@ -162,7 +162,7 @@ https://ourworldindata.org/natural-disasters
  
 NOAA National Centers for Environmental Information (NCEI) U.S. Billion-Dollar Weather and Climate Disasters (2022). https://www.ncei.noaa.gov/access/billions/, DOI: 10.25921/stkw-7w73 
  
-Centre for research on the epidemiology of disasters: Centre for research on the epidemiology of disasters (no date) Centre for Research on the Epidemiology of Disasters | Centre for Research on the Epidemiology of Disasters. Available at: https://www.cred.be/publications  
+Centre for research on the epidemiology of disasters: Centre for research on the epidemiology of disasters. Centre for Research on the Epidemiology of Disasters, Centre for Research on the Epidemiology of Disasters. Available at: https://www.cred.be/publications  
  
 Paper, D.A. (2020) How climate change contributed to the Australian bushfires, Double A Paper Supplier. Available at: https://us.doubleapaper.com/home/climate-change-australian-bushfires/  
 

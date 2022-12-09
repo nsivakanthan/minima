@@ -203,6 +203,8 @@ to choose the best model, such as the F1-score, which averages precision and rec
 
 ### Appendix: 
 
+[Link for Full Code](https://nsivakanthan.github.io/assets/Suport-Vector-Machines.html)
+
 ![Fig11](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig11.JPG 'Fig11')
 
 ![Fig12](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig12.JPG 'Fig12')

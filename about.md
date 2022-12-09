@@ -8,7 +8,7 @@ permalink: /about me/
 
 ### Bio:
 
-Nith was born and raised in Pittsburgh, PA. He later moved to Florida where he graduated high school, undergrad, and graduate school. While at University of Florida, Nith became an entrepreneaur in healthcare technology and services. He later pursued teaching as a middle school math teacher in Las Vegas, Nevada. Now, he tutors middle and high school level math part-time.
+Nith was born and raised in Pittsburgh, PA. He later moved to Florida where he graduated high school, undergrad, and graduate school. While at University of Florida, Nith became an entrepreneur in healthcare technology and services. He later pursued teaching as a middle school math teacher in Las Vegas, Nevada. Now, he tutors middle and high school level math part-time.
 
 He thouroughly enjoys following professional sports, particularly the NHL and NFL. 
 

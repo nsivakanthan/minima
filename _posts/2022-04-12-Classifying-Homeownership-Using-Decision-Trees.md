@@ -130,5 +130,7 @@ achieve the same results.
 
 ### Appendix:
 
+[Link for Full Code](https://nsivakanthan.github.io/assets/Decision-Trees.html)
+
 ![Fig6](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig6.JPG 'Fig6')
 ![Fig7](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig7.JPG 'Fig7')

@@ -1,3 +1,5 @@
+![Banner](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/images/neural-network.JPG 'Banner')
+
 By: Nitharsan Sivakanthan
 
 ### Abstract:

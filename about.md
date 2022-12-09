@@ -21,19 +21,5 @@ linkedin: nsivakanthan
 
 github: nsivakanthan
 
-#### Degrees:
-
-University of Florida -
-
-Bachelor's of Science in Statistics
-
-Bahcelor's of Arts in Mathematics
-
-Master's in Business Administration
-
-Seattle Unviersity -
-
-Master's in Data Science (in progress)
-
 [Resume](https://nsivakanthan.github.io/Resume.html)
 

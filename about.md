@@ -16,7 +16,9 @@ He is interested in earning a PhD in Data Science, with the goal of either becom
 
 ### Contact Info:
 email: nith.sivakanthan@gmail.com
+
 linkedin: nsivakanthan
+
 github: nsivakanthan
 
 #### Degrees:

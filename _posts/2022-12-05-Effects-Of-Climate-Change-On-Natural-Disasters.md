@@ -14,17 +14,20 @@ The COVID-19 pandemic has managed to draw researchers’ attention to the impact
  
 ### Methodology: 
 
-#### Data Collection -  
+#### Data Collection -
+
 We sourced multiple datasets from Kaggle and Our World in Data. These datasets complement each other well and provide enough information to explore the questions we sought out to answer. The first dataset from Kaggle contains the CO2 emissions in metric tons per capita of every country from 1960-2018. The second dataset from Kaggle contains information regarding every disaster occurring in the United States between 1980 and 2022 that cost the US more than 1 billion dollars. Additionally, this data set includes information on the deaths per disaster and classifies each disaster into a disaster type. The third dataset from Our World in Data provides information about natural disasters for every country in the world from 1900 to 2022. Our analysis uses the values of deaths, people affected, and people affected per million for each country from this dataset. ‘People affected’ is defined as people who require immediate assistance during a disaster. The fourth dataset is extracted from the Geodata package, which provides geographic polygons for all the world's countries. This data is used to visualize the world, to highlight countries contributing to CO2 emissions and the most affected countries.
 
  
-#### Data cleaning and tools used- 
+#### Data cleaning and tools used-
+
 Once the data is loaded into the coding notebook, the data from various data files are converted into data frame formats and comprehensive data preparation is initiated. The column names were renamed to have consistent field names, removed all the null values for considered columns, filtered out the required data, converted required data frames from wide to long formats, changed the data types, and dropped unwanted columns. Aggregation operations are performed over required columns to calculate the mean and median values. Considering the huge size of the data files, we narrowed our focus to specifically required columns for the disaster data set. For the disaster data set, we only used the columns which provided information about the number of deaths and those affected by each disaster. 
 After the data preparation is performed, a statistical visualization python library, ‘Altair’ is implemented to visualize the required plots. A series of world maps, bar plots, and line graphs are created to communicate the trends and data findings. We also used our knowledge of Tableau, a visual analytics platform, to create some of the visualizations which seem to be complicated using python libraries. The same data files were used as a source in this software to produce the charts in separate sheets and finally layered them together on a dashboard to extract as a static visual image. 
  
 ### Results: 
 
-#### CO2 Emissions: The Global Trend - 
+#### CO2 Emissions: The Global Trend -
+
 To investigate whether CO2 emissions impact the frequency or severity of natural disasters, we will first look at global trends in CO2 emissions. Fig 1 shows CO2 emissions in metric tons per capita in 2021 for the top 15 countries. It is important to note the US is among the top CO2 emitters. 
 
 ![Top 15 CO2 Emitters](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img1.png 'Top 15 CO2 Emitters')
@@ -37,7 +40,8 @@ To get a better sense of yearly CO2 emissions, we show CO2 emissions in metric t
 
 Fig 2: Yearly CO2 Emissions for Countries 
  
-#### The Human Cost: Frequency and Severity of Natural Disasters - 
+#### The Human Cost: Frequency and Severity of Natural Disasters -
+
 Fig 3 shows us an upward trend in the count of disasters over time in the US. It is important to note, Fig 3 shows us the counts of disasters from 1980 to 2022, while we can see from Fig 2 the upward trend in CO2 emissions starts decades before this. Regardless, both trends are consistent even when focused on matching time periods. From this, there seems to be a strong relationship between global CO2 emissions and the frequency of natural disasters in the US. The largest attributor to the count of natural disasters over time in the US are severe storms. We can compare the counts of natural disasters to the counts of other types of natural disasters as well. 
  
 ![Count of Disasters](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/fig3.png 'Count of Disasters')
@@ -108,46 +112,59 @@ This analysis shows the potential to decrease the financial cost of natural disa
  
 ### Conclusion:
 
-Climate change has many effects on our planet. This research focuses on climate change’s effect on the human and monetary costs of natural disasters. Studies have shown that human-induced climate change is in large part due to CO2 emissions across the globe. Our analysis starts by showing the increasing global trend in CO2 emissions. An increasing trend can also be seen for the counts of natural disasters, the number of people affected by natural disasters, and the cost of natural disasters across the United States. As such, it is possible that climate change causes these increasing trends of human and financial costs to the US. If countries around the world worked together to decrease human-induced climate change, our analysis shows it is possible to save and improve people’s lives and save the US government billions of dollars.  
+Climate change has many effects on our planet. This research focuses on climate change’s effect on the human and monetary costs of natural disasters. Studies have shown that human-induced climate change is in large part due to CO2 emissions across the globe. Our analysis starts by showing the increasing global trend in CO2 emissions. An increasing trend can also be seen for the counts of natural disasters, the number of people affected by natural disasters, and the cost of natural disasters across the United States. As such, it is possible that climate change causes these increasing trends of human and financial costs to the US. If countries around the world worked together to decrease human-induced climate change, our analysis shows it is possible to save and improve people’s lives and save the US government billions of dollars.
+
 In the future, we will need more information to establish a causal relationship between climate change and these increasing trends. There are three areas to focus efforts on. Further analysis of how people are affected by disasters is necessary. More detail is needed on how US dollars have been used for disaster events over time. Finally, consideration is needed of how data collection might have changed over time due to improved technologies on detecting natural disasters, obtaining numbers of people affected from disasters, and dollar values of relief efforts.  
 
  
 ### Appendix:
 
-#### Design of Visualizations - 
+#### Design of Visualizations -
+
 All the bar plots use the same color (‘e57a44’) to maintain consistency of color scheme throughout the visualizations. 
 
-Fig 1: Top 15 Countries in CO2 Emissions in 2021 -  
+Fig 1: Top 15 Countries in CO2 Emissions in 2021 -
+
 A table heatmap is created in Tableau to visualize the CO2 emissions (Metric Tons per Capita) for the top 15 countries. A sequential multi-Hue orange-gold color scheme was used to emphasize the high CO2 emitting countries. The dark-to-light intensity of the color shows the amount of CO2 emitted by these countries in 2021. 
  
-Fig 2: Yearly CO2 Emissions for Countries - 
+Fig 2: Yearly CO2 Emissions for Countries -
+
 This a line plot showing how CO2 emissions (metric tons per capita) change over time for a select few countries. In addition, a dotted line for the global median is added so that we can establish a global trend of CO2 emissions. The countries are selected to show a range of values above and below the global median. Since certain countries have very low and very high emissions per capita, we re-scale the y-axis so the trend lines for all countries are visible. The scale type 'square root (sqrt)' is used so that the distances in the pixel range will correspond to the square root of the distances in the data domain. To prevent overcrowding of the x-axis, we show ticks every five years. Colors are chosen to distinguish countries and shown in the legend. 
 
-Fig 3: Count of Disasters in the US -  
+Fig 3: Count of Disasters in the US -
+
 This is a bar plot showing the counts of disasters each year from 1980 to 2022 in the US. Opacity is used to distinguish between counts of natural disasters and counts of severe storms, which is one of the types of disasters. Severe storms are shown because they are the major contributor of natural disasters in the US. This plot is used to show the increasing trend of the number of natural disasters in the US. 
  
-Fig 4: Global Map for affected per million - 
+Fig 4: Global Map for affected per million -
+
 A Choropleth map is plotted to communicate about the most affected countries due to Global CO2 emissions with respect to the number of people affected per million population using the color scheme 'yelloworangered'. The countries that are most affected are highlighted in red color and the intensity of the color of the countries decreases with a decrease in the value of number of people affected.  
  
-Fig 5: Bar plot top 5 most affected countries - 
+Fig 5: Bar plot top 5 most affected countries -
+
 The top five countries with the greatest number of people affected are represented in Bar graph with the Y axis rescaled to ‘square root’ type. USA Stands among top 5 countries. 
  
-Fig 6: Number of People Affected Globally and in the US - 
+Fig 6: Number of People Affected Globally and in the US -
+
 This is a bar plot that shows the number of people affected (in Millions) by catastrophes around the world and the USA per decade. The opacity was adjusted to make grid lines visible behind the filled bars. The Y-axis was scaled to show the count per million. 
  
 Fig 7: Number of Deaths Globally and in the US - 
+
 This is a bar plot that shows the number of people who lost their life in catastrophes around the world and the USA per decade. The opacity was adjusted to make grid lines visible behind the filled bars. The Y-axis shows the actual number of deaths in the world against the USA. 
  
-Fig 8A and 8B: Percentage of People Affected/Deaths by Disaster Type Globally and in the US  
+Fig 8A and 8B: Percentage of People Affected/Deaths by Disaster Type Globally and in the US-
+
 This is a bar plot that shows the percentage of total deaths/affected people around the world and the US for each disaster. The percentages are calculated independently for each pane (World and USA). This actual visualization comes with an interactive feature to select the impact on People (Deaths or Affected). The opacity is adjusted to show the grid lines behind the filled bars. 
  
-Fig 9: Trend line for Cost (in millions of dollars) per disaster type  
+Fig 9: Trend line for Cost (in millions of dollars) per disaster type-
+
 This tabular visualization is built in tableau to show the trend in the amount of cost spent by the US government to mitigate the effects of these natural disasters. This table is selectively designed to show important information to the audience. The first column shows the disaster name, and the second and fourth columns show the minimum and maximum cost spent on each disaster in millions of dollars. The third column, a line chart, shows the trend cost from 1980 to 2018 with the y-axis scaled independently for each disaster. 
  
-Fig 10: Yearly Global CO2 emissions and Yearly Cost of Disasters for the US - 
+Fig 10: Yearly Global CO2 emissions and Yearly Cost of Disasters for the US -
+
 Two distinct line graphs are combined in a single dual Y-axis plot with respect to the ‘Years’. Both the graphs are distinguished by different colors. Each Y-axis label is highlighted with the same color as their respective line plots. Since the trend is being described, between 2008 and 2018, the X-axis is labeled with only 3 years to reduce the ink usage and clumsiness.  
 
-Fig 11: Yearly Cost per CO2 emissions for the US - 
+Fig 11: Yearly Cost per CO2 emissions for the US -
+
 Yearly economic costs per CO2 emissions for the USA are calculated by dividing the cost of disaster for the USA by its CO2 emissions, per year. With this data, a scatterplot is plotted for ‘Yearly Cost per CO2 emissions for the US’ against the years and a regression line is plotted to observe the trend between 1980 and 2018 Here also, just three years are shown on Y axis, since only trend of the points is being observed and not focused on individual year. 
  
 #### Data Sources-
@@ -163,7 +180,7 @@ https://ourworldindata.org/natural-disasters
  
 NOAA National Centers for Environmental Information (NCEI) U.S. Billion-Dollar Weather and Climate Disasters (2022). https://www.ncei.noaa.gov/access/billions/, DOI: 10.25921/stkw-7w73 
  
-Centre for research on the epidemiology of disasters: Centre for research on the epidemiology of disasters (no date) Centre for Research on the Epidemiology of Disasters | Centre for Research on the Epidemiology of Disasters. Available at: https://www.cred.be/publications  
+Centre for research on the epidemiology of disasters: Centre for research on the epidemiology of disasters. Centre for Research on the Epidemiology of Disasters Centre for Research on the Epidemiology of Disasters. Available at: https://www.cred.be/publications  
  
 Paper, D.A. (2020) How climate change contributed to the Australian bushfires, Double A Paper Supplier. Available at: https://us.doubleapaper.com/home/climate-change-australian-bushfires/  
 

@@ -58,7 +58,9 @@ all the tests corresponding to our predictors. PCA is a dimensionality reduction
 to approximate data by creating principal components that best describe that data. PCA computes
 principal components, 𝑍𝑛, using the following linear combination. 
 
-\\[𝑍_𝑛 = 𝜙_{1𝑛}𝑥_{1} + 𝜙_{2𝑛}𝑥_{2} + ⋯ + 𝜙_{𝑝𝑛}𝑥_𝑃\\]
+{% raw %} 
+$𝑍_𝑛 = 𝜙_{1𝑛}𝑥_{1} + 𝜙_{2𝑛}𝑥_{2} + ⋯ + 𝜙_{𝑝𝑛}𝑥_𝑃$
+{% endraw %} 
 
 Each 𝜙𝜌 is a linear combination of features p that correspond to the direction of greatest
 variance and the observations x. Each principal component now gives us the location of observations in

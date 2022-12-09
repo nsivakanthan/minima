@@ -1,6 +1,4 @@
-### Classifying Homeownership Using Decision Trees
-
-Nitharsan Sivakanthan
+By: Nitharsan Sivakanthan
 
 ### Abstract:
 

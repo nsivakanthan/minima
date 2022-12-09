@@ -1,5 +1,4 @@
-## Image Classification of Species of Birds
-Nitharsan Sivakanthan
+By: Nitharsan Sivakanthan
 
 ### Abstract:
 

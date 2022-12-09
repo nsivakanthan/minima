@@ -1,6 +1,4 @@
-### Predicting Major Depressive Episodes and Substance Use Disorder in Youth
-
-Nitharsan Sivakanthan
+By: Nitharsan Sivakanthan
 
 ### Abstract:
 

@@ -59,7 +59,7 @@ to approximate data by creating principal components that best describe that dat
 principal components, 𝑍𝑛, using the following linear combination. 
 
 {% raw %}
-$$𝑍_𝑛 = 𝜙_{1𝑛}𝑥_{1} + 𝜙_{2𝑛}𝑥_{2} + ⋯ + 𝜙_{𝑝𝑛}𝑥_𝑃$$
+$𝑍_𝑛 = 𝜙_{1𝑛}𝑥_{1} + 𝜙_{2𝑛}𝑥_{2} + ⋯ + 𝜙_{𝑝𝑛}𝑥_𝑃$
 {% endraw %}
 
 Each 𝜙𝜌 is a linear combination of features p that correspond to the direction of greatest

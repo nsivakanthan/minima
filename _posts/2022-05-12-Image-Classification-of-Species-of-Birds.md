@@ -5,7 +5,7 @@ By: Nitharsan Sivakanthan
 Convolution Neural Networks have been used frequently to classify images into categories.
 Using this deep learning algorithm paired with computational power, models have been trained
 on different datasets capable of achieving amazing results in classification. We train a model to
-classify images of birds into one of 18 species common to the western Washington State area.
+classify images of birds into one of 18 species common to the western Washington State area. <!--more-->
 After tuning for parameters, the best model was able to achieve accuracy on the testing data of
 roughly 50%. With more computational power, we expect to be able to reach higher accuracy.
 

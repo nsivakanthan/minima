@@ -6,7 +6,7 @@ Principal Component Analysis and K-means clustering can both be used to explore 
 uncover patterns. Here we look at several thousand COVID DNA sequences collected primarily
 from Washington state. We uncover that there are certain locations and values on these
 sequences that account for most of the variation in all the data and that there is potential to
-differentiate these sequences into groups based on COVID variant or even origin.
+differentiate these sequences into groups based on COVID variant or even origin. <!--more-->
 
 ### Background:
 

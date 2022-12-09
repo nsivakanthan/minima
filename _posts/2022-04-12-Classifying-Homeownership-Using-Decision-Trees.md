@@ -4,7 +4,7 @@ By: Nitharsan Sivakanthan
 
 This study uses data from the American Housing Survey to predict whether an individual owns or rents
 their home. We will use a subset of the hundreds of variables available through the American Housing
-Survey to classify the housing status variable called TENURE. These variables are considered in random
+Survey to classify the housing status variable called TENURE. <!--more--> These variables are considered in random
 forest and boosting decision tree models. We find that certain variables from the survey contain enough
 information to perfectly predict TENURE. When these variables are removed, we can achieve accuracy
 of roughly 93%. We expect to be able to improve these results with more intensive decision tree

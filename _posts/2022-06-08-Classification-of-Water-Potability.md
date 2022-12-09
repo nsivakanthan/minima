@@ -5,7 +5,7 @@ By: Prateek Kakkar, Liya LaPierre, Nitharsan Sivakanthan
 Human survival depends on the availability of water. Safe drinking water is both a basic need for
 good health and a basic human right. In many places of the world, fresh water is already in short supply.
 The availability of safe drinking water and sanitation is a global issue. Does the potability of water
-depend on the pH value, turbidity, hardness, or sediment present? Using the data from the Kaggle
+depend on the pH value, turbidity, hardness, or sediment present? <!--more--> Using the data from the Kaggle
 (Kadiwal, n.d.), this research demonstrates the use of unsupervised and supervised machine learning to
 determine the factors affecting the quality of water. The first model using logistic regression was able to
 classify the potability of water with an error rate of 39%. The models using Random Forest were able to
@@ -58,7 +58,7 @@ all the tests corresponding to our predictors. PCA is a dimensionality reduction
 to approximate data by creating principal components that best describe that data. PCA computes
 principal components, 𝑍𝑛, using the following linear combination. 
 
-$$𝑍_𝑛 = 𝜙_{1𝑛}𝑥_{1} + 𝜙_{2𝑛}𝑥_{2} + ⋯ + 𝜙_{𝑝𝑛}𝑥_𝑃$$
+\\[𝑍_𝑛 = 𝜙_{1𝑛}𝑥_{1} + 𝜙_{2𝑛}𝑥_{2} + ⋯ + 𝜙_{𝑝𝑛}𝑥_𝑃\\]
 
 Each 𝜙𝜌 is a linear combination of features p that correspond to the direction of greatest
 variance and the observations x. Each principal component now gives us the location of observations in
@@ -223,7 +223,7 @@ classification.
 
 ### References:
 
-[Link for Full Code](https://htmlpreview.github.io/?https://nsivakanthan.github.io/ML-Research-Papers/Water-Potability-Code.html)
+[Link for Full Code](https://nsivakanthan.github.io/ML-Research-Papers/Water-Potability-Code.html)
 
 Environmental Protection Agency. (n.d.) National Primary Drinking Water Regulations. EPA.gov.
 https://www.epa.gov/sites/default/files/2016-06/documents/npwdr_complete_table.pdf

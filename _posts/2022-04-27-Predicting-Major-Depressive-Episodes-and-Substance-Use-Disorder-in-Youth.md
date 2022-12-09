@@ -4,7 +4,7 @@ By: Nitharsan Sivakanthan
 
 Can we use a questionnaire to determine whether a child experiences a major depressive episode or
 substance use disorder? Knowing this could allow parents and schools to predict whether a child is
-experiencing these issues and promptly provide support to that child. We use data collected from the
+experiencing these issues and promptly provide support to that child. <!--more--> We use data collected from the
 2020 National Survey on Drug Use and Health to classify youth for two factors. Each of these factors tells
 us whether a particular child has experienced a major depressive episode and/or a substance use.
 Applying support vector classifier and support vector machine models, we will classify youth into these

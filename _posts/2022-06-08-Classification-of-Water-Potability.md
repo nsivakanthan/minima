@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/images/pexels-samad-deldar-66346.jpg 'Banner')
+![Banner](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/images/cropped-pexels-samad-deldar-66346.jpg 'Banner')
 
 By: Prateek Kakkar, Liya LaPierre, Nitharsan Sivakanthan
 

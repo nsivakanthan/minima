@@ -4,15 +4,9 @@ title: About Me
 permalink: /about me/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![Profile](https://avatars.githubusercontent.com/u/98194835?s=400&u=9a19f420266d25a7ed03e340cdc75a11b14267c5&v=4 'Profile')
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+### Bio:
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+[Resume]('https://nsivakanthan.github.io/Resume.html')
 
-
-[jekyll-organization]: https://github.com/jekyll

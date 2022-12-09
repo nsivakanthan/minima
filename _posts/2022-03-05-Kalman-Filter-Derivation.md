@@ -3,5 +3,5 @@
 By: Nitharsan Sivakanthan
 
 In this video, I derive the Kalman Filter mathematically. 
-
+<!--more-->
 {% include youtube_embed.html id="miAKXD22hG0" %}  

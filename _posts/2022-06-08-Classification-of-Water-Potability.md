@@ -225,7 +225,7 @@ classification.
 
 ### References:
 
-[Link for Full Code](https://nsivakanthan.github.io/ML-Research-Papers/Water-Potability-Code.html)
+[Link for Full Code](https://nsivakanthan.github.io/assets/Water-Potability-Code.html)
 
 Environmental Protection Agency. (n.d.) National Primary Drinking Water Regulations. EPA.gov.
 https://www.epa.gov/sites/default/files/2016-06/documents/npwdr_complete_table.pdf

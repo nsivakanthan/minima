@@ -6,7 +6,6 @@ description: > # this means to ignore newlines until "show_excerpts:"
   A showcase of my work in data science.
 
 excerpt_separator: <!--more-->
-paginate: 4
 
 show_excerpts: true # set to true to show excerpts on the homepage
 

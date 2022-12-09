@@ -1,4 +1,4 @@
-[Banner](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/images/pexels-george-desipris-753619.jpg 'Banner')
+![Banner](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/images/pexels-george-desipris-753619.jpg 'Banner')
 
 By: Nitharsan Sivakanthan, Prateek Kakkar, Ramgopal Reddy Putta
 

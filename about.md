@@ -8,5 +8,5 @@ permalink: /about me/
 
 ### Bio:
 
-[Resume]('https://nsivakanthan.github.io/Resume.html')
+[Resume](https://nsivakanthan.github.io/Resume.html)
 

@@ -24,6 +24,8 @@ header_pages:
 
 # Build settings
 theme: minima
+markdown: kramdown
+mathjax: true
 
 plugins:
  - jekyll-seo-tag

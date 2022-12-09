@@ -1,6 +1,5 @@
 ---
 layout: default
-excerpt_separator: <!--more-->
 ---
 
 <div class="home">
@@ -8,7 +7,7 @@ excerpt_separator: <!--more-->
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ content | strip_html | truncatewords: 50 }}
+  {{ content }}
 
 
   {% if site.paginate %}

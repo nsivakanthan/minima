@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/images/neural-network.JPG 'Banner')
+![Banner](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/images/boris-smokrovic-DPXytK8Z59Y-unsplash.jpg 'Banner')
 
 By: Nitharsan Sivakanthan
 

@@ -1,4 +1,3 @@
-### Effects of Climate Change on Natural Disasters
 By: Nitharsan Sivakanthan, Prateek Kakkar, Ramgopal Reddy Putta
 
 ### Abstract: 

@@ -44,7 +44,7 @@ Fig 2: Yearly CO2 Emissions for Countries
 
 Fig 3 shows us an upward trend in the count of disasters over time in the US. It is important to note, Fig 3 shows us the counts of disasters from 1980 to 2022, while we can see from Fig 2 the upward trend in CO2 emissions starts decades before this. Regardless, both trends are consistent even when focused on matching time periods. From this, there seems to be a strong relationship between global CO2 emissions and the frequency of natural disasters in the US. The largest attributor to the count of natural disasters over time in the US are severe storms. We can compare the counts of natural disasters to the counts of other types of natural disasters as well. 
 
-<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig3.html" height="860px" width="540px" scrolling="no" frameborder="0" style="overflow:hidden"></iframe>
+<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig3.html" height="860px" width="1000px" scrolling="no" frameborder="0" style="overflow:hidden"></iframe>
 
 Fig 3: Count of Disasters in the US per Year
 
@@ -74,7 +74,7 @@ Fig 7: Number of Deaths Globally and in the US
  
 In Fig 8, we can compare which types of disasters affect the most people and cause the most deaths globally and in the US. In the US, storms are the major cause of people affected and death totals. This is corroborated by the trends we found in Fig 3 with the increasing counts of disasters in the US over time being attributed mostly due to the increasing counts in severe storms. 
 
-<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig8.html" height="800px" width="730px" scrolling="no" style="overflow:hidden"></iframe>
+<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig8.html" height="800px" width="1000px" scrolling="no" style="overflow:hidden"></iframe>
 
 Fig 8: Percentage of Deaths/Affected by Disaster Type Globally and in the US
  

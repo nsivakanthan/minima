@@ -20,6 +20,3 @@ email: nith.sivakanthan@gmail.com
 linkedin: nsivakanthan
 
 github: nsivakanthan
-
-### [Resume](https://nsivakanthan.github.io/Resume.html)
-

@@ -44,13 +44,13 @@ Fig 2: Yearly CO2 Emissions for Countries
 
 Fig 3 shows us an upward trend in the count of disasters over time in the US. It is important to note, Fig 3 shows us the counts of disasters from 1980 to 2022, while we can see from Fig 2 the upward trend in CO2 emissions starts decades before this. Regardless, both trends are consistent even when focused on matching time periods. From this, there seems to be a strong relationship between global CO2 emissions and the frequency of natural disasters in the US. The largest attributor to the count of natural disasters over time in the US are severe storms. We can compare the counts of natural disasters to the counts of other types of natural disasters as well. 
 
-<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig3.html" height="400px" width="1000px" scrolling="no" frameborder="0" style="overflow:hidden"></iframe>
+<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig3.html" height="450px" width="1000px" scrolling="no" frameborder="0" style="overflow:hidden"></iframe>
 
 Fig 3: Count of Disasters in the US per Year
 
 Before we look deeper at the severity of natural disasters in the US, we want to look at the global landscape. We chose to show the average of the past two decades to gather a more recent picture of global values. Fig 4 shows the total number of people affected per million in each country from 1998 to 2018.  It is observed that the USA is one of the most affected countries in the world, since the color of USA is towards the ‘red’ color shade of the color scheme.   
 
-<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig4.html" height="550px" width="1000px" scrolling="no" frameborder="0" style="overflow:hidden"></iframe>
+<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig4.html" height="600px" width="1000px" scrolling="no" frameborder="0" style="overflow:hidden"></iframe>
 
 Fig 4: Global Map for Affected per Million
  

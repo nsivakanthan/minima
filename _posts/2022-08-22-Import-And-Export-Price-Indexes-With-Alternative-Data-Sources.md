@@ -4,5 +4,5 @@ In Summer 2022, I had the opportunity to work remotely at the Bureau of Labor St
 
 At the end of the fellowship experience, I gave an online presentation to the Department of Labor over one of the projects I worked on over the summer. Included here is the slide deck of that presentation:
 
-<embed src="https://nsivakanthan.github.io/assets/BLS_Nitharsan_Sivakanthan.pdf" width="500" height="375" 
+<embed src="https://nsivakanthan.github.io/assets/BLS_Nitharsan_Sivakanthan.pdf" width="1000" height="1000" 
  type="application/pdf">

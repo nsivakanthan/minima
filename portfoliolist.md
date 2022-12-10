@@ -13,7 +13,7 @@ permalink: /portfolio list/
 [Effects Of Climate Change On Natural Disasters]({% post_url 2022-12-05-Effects-Of-Climate-Change-On-Natural-Disasters %})
 
 [Import And Export Price Indexes With Alternative Data Sources
-]({% 2022-08-22-Import-And-Export-Price-Indexes-With-Alternative-Data-Sources %})
+]({% post_url 2022-08-22-Import-And-Export-Price-Indexes-With-Alternative-Data-Sources %})
 
 [Classification Of Water Potability]({% post_url 2022-06-08-Classification-of-Water-Potability %})
 

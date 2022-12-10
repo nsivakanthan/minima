@@ -6,11 +6,11 @@ permalink: /portfolio list/
 
 #### Derivations:
 
-[Kalman Filter Derivation]({% post_url _posts/2022-03-05-Kalman-Filter-Derivation %})
+[Kalman Filter Derivation]({% post_url 2022-03-05-Kalman-Filter-Derivation %})
 
 #### Projects/Research:
 
-[Effects Of Climate Change On Natural Disasters]({% post_url /2022-12-05-Effects-Of-Climate-Change-On-Natural-Disasters %})
+[Effects Of Climate Change On Natural Disasters]({% post_url 2022-12-05-Effects-Of-Climate-Change-On-Natural-Disasters %})
 
 [Import And Export Price Indexes With Alternative Data Sources
 ]({% 2022-08-22-Import-And-Export-Price-Indexes-With-Alternative-Data-Sources %})

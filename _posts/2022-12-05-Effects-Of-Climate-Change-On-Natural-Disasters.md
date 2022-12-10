@@ -44,19 +44,15 @@ Fig 2: Yearly CO2 Emissions for Countries
 
 Fig 3 shows us an upward trend in the count of disasters over time in the US. It is important to note, Fig 3 shows us the counts of disasters from 1980 to 2022, while we can see from Fig 2 the upward trend in CO2 emissions starts decades before this. Regardless, both trends are consistent even when focused on matching time periods. From this, there seems to be a strong relationship between global CO2 emissions and the frequency of natural disasters in the US. The largest attributor to the count of natural disasters over time in the US are severe storms. We can compare the counts of natural disasters to the counts of other types of natural disasters as well. 
 
-<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig3.html" height="400px" width="100%"></iframe>
+<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig3.html" height="860px" width="540px"></iframe>
 
 Fig 3: Count of Disasters in the US per Year
 
 Before we look deeper at the severity of natural disasters in the US, we want to look at the global landscape. We chose to show the average of the past two decades to gather a more recent picture of global values. Fig 4 shows the total number of people affected per million in each country from 1998 to 2018.  It is observed that the USA is one of the most affected countries in the world, since the color of USA is towards the ‘red’ color shade of the color scheme.   
- 
-![Global Map for Affected per Million](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/fig4.png 'Global Map for Affected per Million')
 
-<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig4.html" height="400px" width="100%"></iframe>
+<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig4.html" height="400px" width="700px" scrolling="no"></iframe>
 
 Fig 4: Global Map for Affected per Million
-
-[Link to Interactive Plot](https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig4.html)
  
 Now, we will shift from looking at the frequency of natural disasters to their severity over time. Fig 5 shows the top 5 countries with the most people affected by natural disasters in the most recent two decades. While the number for countries like China and India are five to ten times more than the US, the people affected in the US is still among the top 5 in the world. 
  
@@ -78,13 +74,9 @@ Fig 7: Number of Deaths Globally and in the US
  
 In Fig 8, we can compare which types of disasters affect the most people and cause the most deaths globally and in the US. In the US, storms are the major cause of people affected and death totals. This is corroborated by the trends we found in Fig 3 with the increasing counts of disasters in the US over time being attributed mostly due to the increasing counts in severe storms. 
 
-![Percentage Deaths/Affected](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/fig8.png 'Percentage Deaths/Affected')
-
-<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig8.html" height="400px" width="100%"></iframe>
+<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig8.html" height="800px" width="730px" scrolling="no"></iframe>
 
 Fig 8: Percentage of Deaths/Affected by Disaster Type Globally and in the US
-
-[Link to Interactive Plot](https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig8.html)
  
 Overall, we see the frequency and severity of natural disasters increasing over time in the US. We believe this trend is related to the upward trend of global CO2 emissions found before. Therefore, there is potential to save lives and improve outcomes for hundreds of thousands of people in the US and millions of people around the world if the world can reverse the trend of global CO2 emissions.  
  

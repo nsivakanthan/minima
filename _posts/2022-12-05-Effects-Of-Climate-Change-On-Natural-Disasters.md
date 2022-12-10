@@ -46,6 +46,8 @@ Fig 3 shows us an upward trend in the count of disasters over time in the US. It
  
 ![Count of Disasters](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/fig3.png 'Count of Disasters')
 
+<iframe src ="https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig3.html" height="800px" width="100%"></iframe>
+
 Fig 3: Count of Disasters in the US per Year
 
 [Link to Interactive Plot](https://nsivakanthan.github.io/co2emissions-and-disasters/Vis-project-images/fig3.html)

@@ -26,7 +26,8 @@ The data consists of ##n## pairs of observations for the input ##\mathbf{x}_i## 
 The goal is for the output layer $$\mathbf{a}^L(\mathbf{x}_i) = \begin{bmatrix} a_j^L(\mathbf{x}_i) \\ a_j^L(\mathbf{x}_i) \\ \vdots \\ a_j^L(\mathbf{x}_i) \end{bmatrix}$$ activities to match the desired output $$\mathbf{y}_i = \begin{bmatrix} y_{i1} \\ y_{i2} \\ \vdots \\ y_{iN_L} \end{bmatrix}$$
 
 
-A cost ##C(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b})## describes the difference between the desired output ##\mathbf{y}_i## and the network's output for a given input ##\mathbf{x}_i##. This cost is the sum of all cost values for each output neuron:
+A cost $$C(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b})$$ 
+describes the difference between the desired output $$\mathbf{y}_i$$ and the network's output for a given input ##\mathbf{x}_i##. This cost is the sum of all cost values for each output neuron:
 
 $$C(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b}) = \sum_{j = 1}^{N_L}C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})$$
 

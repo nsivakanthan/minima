@@ -6,8 +6,6 @@ permalink: /portfolio list/
 
 #### Derivations:
 
-[Neural Network From Scratch]({% post_url 2022-12-10-Neural-Network-from-Scratch %})
-
 [Kalman Filter Derivation]({% post_url 2022-03-05-Kalman-Filter-Derivation %})
 
 #### Projects/Research:

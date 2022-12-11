@@ -6,31 +6,34 @@ Here I will go over how to make a multi-layer perceptron neural network from scr
 
 #### Network Notation-
 
-Neuron activations are denoted $a_j^l$, where the superscript $l$ is the layer and the subscript $j$ denotes the neuron index within that layer.
+Neuron activations are denoted ##a_j^l##, where the superscript ##l## is the layer and the subscript ##j## denotes the neuron index within that layer.
 
-The first layer is the input data itself $\mathbf{a}^1 = \mathbf{x}_i$.
+The first layer is the input data itself ##\mathbf{a}^1 = \mathbf{x}_i##.
 
-The hidden layer and output layer activities are written in terms of the weights $w_{jk}^l$, biases $b_j^l$, and the preceding layer activities $a_k^{l-1}$ as
+The hidden layer and output layer activities are written in terms of the weights ##w_{jk}^l##, biases ##b_j^l##, and the preceding layer activities ##a_k^{l-1}## as
 $$a_j^l = \sigma(\sum_k w_{jk}^la_k^{l-1} + b_j^l)$$
 
 The activation function $\sigma(z)$ is typically the ReLU or sigmoid function.
 
-The input is simplified using the notation $z_j^l = \sum_k w_{jk}^la_k^{l-1} + b_j^l$ so that $a_j^l = \sigma(z_j^l)$
+The input is simplified using the notation ##z_j^l = \sum_k w_{jk}^la_k^{l-1} + b_j^l$ so that $a_j^l = \sigma(z_j^l)##
 
 The weights and biases for the entire network are written with bold symbols $\mathbf{w}, \mathbf{b}$.
 
 #### The Cost Function-
 
-The data consists of $n$ pairs of observations for the input $\mathbf{x}_i$ and desired output layer response $\mathbf{y}_i$.
+The data consists of ##n## pairs of observations for the input ##\mathbf{x}_i## and desired output layer response ##\mathbf{y}_i#.
 
 The goal is for the output layer $$\mathbf{a}^L(\mathbf{x}_i) = \begin{bmatrix} a_j^L(\mathbf{x}_i) \\ a_j^L(\mathbf{x}_i) \\ \vdots \\ a_j^L(\mathbf{x}_i) \end{bmatrix}$$ activities to match the desired output $$\mathbf{y}_i = \begin{bmatrix} y_{i1} \\ y_{i2} \\ \vdots \\ y_{iN_L} \end{bmatrix}$$
 
 
-A cost $C(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b})$ describes the difference between the desired output $\mathbf{y}_i$ and the network's output for a given input $\mathbf{x}_i$. This cost is the sum of all cost values for each output neuron:
+A cost ##C(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b})## describes the difference between the desired output ##\mathbf{y}_i## and the network's output for a given input ##\mathbf{x}_i##. This cost is the sum of all cost values for each output neuron:
+
 $$C(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b}) = \sum_{j = 1}^{N_L}C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})$$
+
 The cost might be a squared error or the cross-entropy loss.
 
 The total cost over all input-output pairs $C_{av}(\mathbf{w}, \mathbf{b})$ is the average cost over the data.
+
 $$C_{av}(\mathbf{w}, \mathbf{b}) = \frac{1}{n}\sum_{i = 1}^nC(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b})$$
 
 #### Gradient Descent-
@@ -43,17 +46,20 @@ $$w^l_{ij} \rightarrow w^l_{ij} - \alpha \frac{\partial C_{av}}{\partial w^l_{ij
 
 $$b^l_{j} \rightarrow b^l_{j} - \alpha \frac{\partial C_{av}}{\partial b^l_{j}}$$
 
-where $\alpha > 0$ is the learning rate.
+where ##\alpha > 0## is the learning rate.
 
-So, we need to compute partial derivatives $\displaystyle \frac{\partial C_{av}}{\partial w^l_{ij}}$ and $\displaystyle \frac{\partial C_{av}}{\partial b^l_{j}}$.
+So, we need to compute partial derivatives ##\displaystyle \frac{\partial C_{av}}{\partial w^l_{ij}}## and ##\displaystyle \frac{\partial C_{av}}{\partial b^l_{j}}##.
 
-Since $$C_{av}(\mathbf{w}, \mathbf{b}) = \frac{1}{n}\sum_{i = 1}^nC(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b}) = \frac{1}{n}\sum_{i = 1}^n\sum_{j = 1}^{N_L}C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})$$
+Since 
 
-we will start by computing derivatives $\displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial w^l_{ij}}$ and $\displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial b^l_{j}}$ and then we will sum the results over the output layer neurons and average over the training data.
+$$C_{av}(\mathbf{w}, \mathbf{b}) = \frac{1}{n}\sum_{i = 1}^nC(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b}) = \frac{1}{n}\sum_{i = 1}^n\sum_{j = 1}^{N_L}C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})$$
+
+we will start by computing derivatives ##\displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial w^l_{ij}}## and ##\displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial b^l_{j}}## and then we will sum the results over the output layer neurons and average over the training data.
 
 To aid the computation of the derivatives, we will write the cost as a function of the last few layer's activities:
 
-\begin{eqnarray}
+
+$$\begin{eqnarray}
 C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b}) & = & \frac{1}{2}(y_{ij} - a_j^L(\mathbf{x}_i))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - a_j^L)^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(z_j^L))^2 \nonumber \\
@@ -62,9 +68,9 @@ C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b}) & = & \frac{1}{2}(y_{ij} - a_j^L
 & = & \frac{1}{2}(y_{ij} - \sigma(\sum_k w_{jk}^L\sigma(\sum_l w_{kl}^{L-1}a_l^{L-2} + b_l^{L-1}) + b_j^L))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(\sum_k w_{jk}^L\sigma(\sum_l w_{kl}^{L-1}\sigma(z_l^{L-2}) + b_l^{L-1}) + b_j^L))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(\sum_k w_{jk}^L\sigma(\sum_l w_{kl}^{L-1}\sigma(\sum_u w_{lu}^{L-2}a_u^{L-3} + b_u^{L-2}) + b_l^{L-1}) + b_j^L))^2 \nonumber 
-\end{eqnarray}
+\end{eqnarray}$$
 
-Note that for simplicity, we drop the explicit reference to each activity being a function of the input $\mathbf{x}_i$.
+Note that for simplicity, we drop the explicit reference to each activity being a function of the input ##\mathbf{x}_i##.
 
 Due to the activation function, this is a non-convex optimization problem. We will need to caluclate gradients of each layer with respect to the weights and biases.
 
@@ -72,55 +78,55 @@ First, we compute partial derivatives for parameters in the output layer:
 
 For this part, it will help to look at these parts of the Cost function while computing these partial derivatives.
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b}) & = & \frac{1}{2}(y_{ij} - a_j^L(\mathbf{x}_i))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - a_j^L)^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(z_j^L))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(\sum_k w_{jk}^La_k^{L-1} + b_j^L))^2 \nonumber \\
-\end{eqnarray}
+\end{eqnarray}$$
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial w_{jk}^L} & = & \frac{\partial C}{\partial a_{j}^L} \frac{\partial a_{j}^L}{\partial z_{j}^L} \frac{\partial z_{j}^L}{\partial w_{jk}^L}\nonumber \\
 & = & (y_{ij} - a_j^L)(-\sigma\prime(z_j^L))(a_{k}^{L-1}) \nonumber \\
 & = & (a_j^L - y_{ij})\sigma\prime(z_j^L)a_{k}^{L-1} \nonumber
-\end{eqnarray}
+\end{eqnarray}$$
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial b_{k}^L}& = & \frac{\partial C}{\partial a_{j}^L} \frac{\partial a_{j}^L}{\partial z_{j}^L} \frac{\partial z_{j}^L}{\partial b_{j}^L}\nonumber \\
 & = & (y_{ij} - a_j^L)(-\sigma\prime(z_j^L))(1) \nonumber \\
 & = & (a_j^L - y_{ij})\sigma\prime(z_j^L)\nonumber
-\end{eqnarray}
+\end{eqnarray}$$
 
 We also need to compute partial derivatives for parameters in the second to last layer:
 
 For this part, it will help to look at these parts of the Cost function while computing these partial derivatives.
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b}) & = & \frac{1}{2}(y_{ij} - a_j^L(\mathbf{x}_i))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - a_j^L)^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(z_j^L))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(\sum_k w_{jk}^La_k^{L-1} + b_j^L))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(\sum_k w_{jk}^L\sigma(z_k^{L-1}) + b_j^L))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(\sum_k w_{jk}^L\sigma(\sum_l w_{kl}^{L-1}a_l^{L-2} + b_l^{L-1}) + b_j^L))^2 \nonumber \\ 
-\end{eqnarray}
+\end{eqnarray}$$
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial w_{kl}^{L-1}}& = & \frac{\partial C}{\partial a_{j}^L} \frac{\partial a_{j}^L}{\partial z_{j}^L} \frac{\partial z_{j}^L}{\partial a_{k}^{L-1}}\frac{\partial a_{k}^{L-1}}{\partial z_{k}^{L-1}} \frac{\partial z_{k}^{L-1}}{\partial w_{lu}^{L-1}}\nonumber \\
 & = & (y_{ij} - a_j^L)(-\sigma\prime(z_j^L))(w_{jk}^{L}\sigma\prime(z_k^{L-1}))a_l^{L-2} \nonumber \\
 & = & (a_j^L - y_{ij})\sigma\prime(z_j^L)w_{jk}^{L}\sigma\prime(z_k^{L-1})a_l^{L-2} \nonumber \\
-\end{eqnarray}
+\end{eqnarray}$$
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial b_{l}^{L-1}}& = & \frac{\partial C}{\partial a_{j}^L} \frac{\partial a_{j}^L}{\partial z_{j}^L} \frac{\partial z_{j}^L}{\partial a_{k}^{L-1}}\frac{\partial a_{k}^{L-1}}{\partial z_{k}^{L-1}} \frac{\partial z_{k}^{L-1}}{\partial b_{l}^{L-1}}\nonumber \\
 & = & (y_{ij} - a_j^L)(-\sigma\prime(z_j^L))(w_{jk}^{L}\sigma\prime(z_k^{L-1})) \nonumber \\
 & = & (a_j^L - y_{ij})\sigma\prime(z_j^L)w_{jk}^{L}\sigma\prime(z_k^{L-1}) \nonumber \\
-\end{eqnarray}
+\end{eqnarray}$$
 
 Now, we compute partial derivatives for parameters in the third to last layer:
 
 For this part, it will help to look at the whole Cost function while computing these partial derivatives.
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b}) & = & \frac{1}{2}(y_{ij} - a_j^L(\mathbf{x}_i))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - a_j^L)^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(z_j^L))^2 \nonumber \\
@@ -129,19 +135,19 @@ C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b}) & = & \frac{1}{2}(y_{ij} - a_j^L
 & = & \frac{1}{2}(y_{ij} - \sigma(\sum_k w_{jk}^L\sigma(\sum_l w_{kl}^{L-1}a_l^{L-2} + b_l^{L-1}) + b_j^L))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(\sum_k w_{jk}^L\sigma(\sum_l w_{kl}^{L-1}\sigma(z_l^{L-2}) + b_l^{L-1}) + b_j^L))^2 \nonumber \\
 & = & \frac{1}{2}(y_{ij} - \sigma(\sum_k w_{jk}^L\sigma(\sum_l w_{kl}^{L-1}\sigma(\sum_u w_{lu}^{L-2}a_u^{L-3} + b_u^{L-2}) + b_l^{L-1}) + b_j^L))^2 \nonumber 
-\end{eqnarray}
+\end{eqnarray}$$
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial w_{lu}^{L-2}}& = & \frac{\partial C}{\partial a_{j}^L} \frac{\partial a_{j}^L}{\partial z_{j}^L} \frac{\partial z_{j}^L}{\partial a_{k}^{L-1}}\frac{\partial a_{k}^{L-1}}{\partial z_{k}^{L-1}} \frac{\partial z_{k}^{L-1}}{\partial a_{l}^{L-2}}\frac{\partial a_{l}^{L-2}}{\partial z_{l}^{L-2}}\frac{\partial z_{l}^{L-2}}{\partial w_{lu}^{L-2}}\nonumber \\
 & = & (y_{ij} - a_j^L)(-\sigma\prime(z_j^L))\sum_k(w_{jk}^{L}\sigma\prime(z_k^{L-1}))(w_{kl}^{L-1}\sigma\prime(z_l^{L-2}))a_u^{L-3} \nonumber \\
 & = & (a_j^L - y_{ij})\sigma\prime(z_j^L)\sum_kw_{jk}^{L}\sigma\prime(z_k^{L-1})w_{kl}^{L-1}\sigma\prime(z_l^{L-2})a_u^{L-3} \nonumber \\
-\end{eqnarray}
+\end{eqnarray}$$
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial b_{u}^{L-2}}& = & \frac{\partial C}{\partial a_{j}^L} \frac{\partial a_{j}^L}{\partial z_{j}^L} \frac{\partial z_{j}^L}{\partial a_{k}^{L-1}}\frac{\partial a_{k}^{L-1}}{\partial z_{k}^{L-1}} \frac{\partial z_{k}^{L-1}}{\partial a_{l}^{L-2}}\frac{\partial a_{l}^{L-2}}{\partial z_{l}^{L-2}}\frac{\partial z_{l}^{L-2}}{\partial b_{u}^{L-2}}\nonumber \\
 & = & (y_{ij} - a_j^L)(-\sigma\prime(z_j^L))\sum_k(w_{jk}^{L}\sigma\prime(z_k^{L-1}))(w_{kl}^{L-1}\sigma\prime(z_l^{L-2}))(1) \nonumber \\
 & = & (a_j^L - y_{ij})\sigma\prime(z_j^L)\sum_kw_{jk}^{L}\sigma\prime(z_k^{L-1})w_{kl}^{L-1}\sigma\prime(z_l^{L-2}) \nonumber \\
-\end{eqnarray}
+\end{eqnarray}$$
 
 These are the partial derivatives of the Cost for the $y_{ij}$'s. We will now get the derivatives of the Cost for the $y_{i}$'s which will compose the gradient for each layer used for gradient descent.
 
@@ -155,25 +161,25 @@ We will use this to show that $\displaystyle \frac{\partial C(\mathbf{x}_i, \mat
 
 First, we will show the result for the output layer:
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{i}; \mathbf{w}, \mathbf{b})}{\partial w_{mn}^L} & = & \frac{\partial}{\partial w_{mn}^L} C(y_i) \nonumber \\
 & = & \sum_{j = 1}^{N_L} \frac{\partial}{\partial w_{mn}^L} C(y_{ij}) \nonumber \\
 & = & \frac{\partial C(y_{im})}{\partial w_{mn}^L} \nonumber \\
 & = & (a_j^L - y_{im})\sigma\prime(z_m^L)a_{n}^{L-1} \nonumber \\
 & = & \delta_m^{L}a_n^{L-1}
-\end{eqnarray}
+\end{eqnarray}$$
 
 Now, we will show the result holds for the two layers before the output layer:
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{i}; \mathbf{w}, \mathbf{b})}{\partial w_{mn}^{L-1}} & = & \frac{\partial}{\partial w_{mn}^{L-1}} C(y_i) \nonumber \\
 & = & \sum_{j = 1}^{N_L} \frac{\partial}{\partial w_{mn}^{L-1}} C(y_{ij}) \nonumber \\
 & = & \sum_{j = 1}^{N_L} (a_j^L - y_{ij})\sigma\prime(z_j^L)w_{jm}^L\sigma\prime(z_m^{L-1})a_{n}^{L-2} \nonumber \\
 & = & \sum_{j = 1}^{N_L} \delta_j^Lw_{jm}^L\sigma\prime(z_m^{L-1})a_{n}^{L-2} \nonumber \\
 & = & \delta_m^{L-1}a_n^{L-2}
-\end{eqnarray}
+\end{eqnarray}$$
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{i}; \mathbf{w}, \mathbf{b})}{\partial w_{mn}^{L-2}} & = & \frac{\partial}{\partial w_{mn}^{L-2}} C(y_i) \nonumber \\
 & = & \sum_{j = 1}^{N_L} \frac{\partial}{\partial w_{mn}^{L-2}} C(y_{ij}) \nonumber \\
 & = & \sum_{j = 1}^{N_L} (a_j^L - y_{ij})\sigma\prime(z_j^L)\sum_{k=1}^{N_{L-1}}w_{jk}^{L}\sigma\prime(z_k^{L-1})w_{km}^{L-1}\sigma\prime(z_m^{L-2})a_n^{L-3} \nonumber \\
@@ -182,19 +188,19 @@ Now, we will show the result holds for the two layers before the output layer:
 & = & \sum_{k=1}^{N_{L-1}}\sum_{j = 1}^{N_L}\delta_j^Lw_{jk}^{L}\sigma\prime(z_k^{L-1})w_{km}^{L-1}\sigma\prime(z_m^{L-2})a_n^{L-3} \nonumber \\
 & = & \sum_{k=1}^{N_{L-1}}\delta_k^{L-1}w_{km}^{L-1}\sigma\prime(z_m^{L-2})a_n^{L-3} \nonumber \\
 & = & \delta_m^{L-2}a_n^{L-3}
-\end{eqnarray}
+\end{eqnarray}$$
 
 This pattern will repeat if we continue adding more layers. We have shown the result to be true. This result will help us signficantly when coding the backpropagation algorithm.
 
 And similarly, we will show that $\displaystyle \frac{\partial C(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b})}{\partial b_{j}^{l}}  = \delta_j^{l}$ for all layers.
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b})}{\partial b_{m}^{L}}& = & \frac{\partial}{\partial b_{m}^{L}} C(y_i) \nonumber \\
 & = & \sum_{j = 1}^{N_L} \frac{\partial}{\partial b_{m}^L} C(y_{ij}) \nonumber \\
 & = & \frac{\partial C(y_{im})}{\partial b_{m}^L} \nonumber \\
 & = & (a_j^L - y_{im})\sigma\prime(z_m^L) \nonumber \\
 & = & \delta_m^{L}
-\end{eqnarray}
+\end{eqnarray}$$
 
 \begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{i}; \mathbf{w}, \mathbf{b})}{\partial b_{m}^{L-1}} & = & \frac{\partial}{\partial b_{m}^{L-1}} C(y_i) \nonumber \\
@@ -204,7 +210,7 @@ And similarly, we will show that $\displaystyle \frac{\partial C(\mathbf{x}_i, \
 & = & \delta_m^{L-1}
 \end{eqnarray}
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{i}; \mathbf{w}, \mathbf{b})}{\partial b_{m}^{L-2}} & = & \frac{\partial}{\partial b_{m}^{L-2}} C(y_i) \nonumber \\
 & = & \sum_{j = 1}^{N_L} \frac{\partial}{\partial b_{m}^{L-2}} C(y_{ij}) \nonumber \\
 & = & \sum_{j = 1}^{N_L} (a_j^L - y_{ij})\sigma\prime(z_j^L)\sum_{k=1}^{N_{L-1}}w_{jk}^{L}\sigma\prime(z_k^{L-1})w_{km}^{L-1}\sigma\prime(z_m^{L-2}) \nonumber \\
@@ -213,11 +219,11 @@ And similarly, we will show that $\displaystyle \frac{\partial C(\mathbf{x}_i, \
 & = & \sum_{k=1}^{N_{L-1}}\sum_{j = 1}^{N_L}\delta_j^Lw_{jk}^{L}\sigma\prime(z_k^{L-1})w_{km}^{L-1}\sigma\prime(z_m^{L-2}) \nonumber \\
 & = & \sum_{k=1}^{N_{L-1}}\delta_k^{L-1}w_{km}^{L-1}\sigma\prime(z_m^{L-2}) \nonumber \\
 & = & \delta_m^{L-2}
-\end{eqnarray}
+\end{eqnarray}$$
 
 Now, we have functions for the derivatives necessary to perform gradient descent.
 
-Remembar, the updates for the weights and biases are given by:
+Remember, the updates for the weights and biases are given by:
 
 $$w^l_{ij} \rightarrow w^l_{ij} - \alpha * \Delta w$$
 

@@ -202,13 +202,13 @@ $$\begin{eqnarray}
 & = & \delta_m^{L}
 \end{eqnarray}$$
 
-\begin{eqnarray}
+$$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{i}; \mathbf{w}, \mathbf{b})}{\partial b_{m}^{L-1}} & = & \frac{\partial}{\partial b_{m}^{L-1}} C(y_i) \nonumber \\
 & = & \sum_{j = 1}^{N_L} \frac{\partial}{\partial b_{m}^{L-1}} C(y_{ij}) \nonumber \\
 & = & \sum_{j = 1}^{N_L} (a_j^L - y_{ij})\sigma\prime(z_j^L)w_{jm}^L\sigma\prime(z_m^{L-1}) \nonumber \\
 & = & \sum_{j = 1}^{N_L} \delta_j^Lw_{jm}^L\sigma\prime(z_m^{L-1}) \nonumber \\
 & = & \delta_m^{L-1}
-\end{eqnarray}
+\end{eqnarray}$$
 
 $$\begin{eqnarray}
 \displaystyle \frac{\partial C(\mathbf{x}_i, y_{i}; \mathbf{w}, \mathbf{b})}{\partial b_{m}^{L-2}} & = & \frac{\partial}{\partial b_{m}^{L-2}} C(y_i) \nonumber \\

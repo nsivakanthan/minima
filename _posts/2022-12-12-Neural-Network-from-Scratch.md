@@ -337,7 +337,8 @@ for ax, image, label in zip(axes, digits.images, digits.target):
 ```
 
 
-
+    
+![png](output_47_0.png)
     
 
 

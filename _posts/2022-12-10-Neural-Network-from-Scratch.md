@@ -1,7 +1,7 @@
 By: Nitharsan Sivakanthan
     
 Here I will go over how to make a multi-layer perceptron neural network from scratch. The derivation of the backpropagation algorithm will also be included.
-
+<!--more-->
 ### The Theory:
 
 #### Network Notation-

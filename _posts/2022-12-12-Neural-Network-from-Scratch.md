@@ -147,7 +147,7 @@ $$\begin{eqnarray}
 & = & (a_j^L - y_{ij})\sigma\prime(z_j^L)\sum_kw_{jk}^{L}\sigma\prime(z_k^{L-1})w_{kl}^{L-1}\sigma\prime(z_l^{L-2}) \nonumber \\
 \end{eqnarray}$$
 
-These are the partial derivatives of the Cost for the $y_{ij}$'s. We will now get the derivatives of the Cost for the $y_{i}$'s. Together these compose the gradient ($$\nabla$$) for each layer used for gradient descent.
+These are the partial derivatives of the Cost for the $$y_{ij}$$'s. We will now get the derivatives of the Cost for the $$y_{i}$$'s. Together these compose the gradient ($$\nabla$$) for each layer used for gradient descent.
 
 To simplify the algorithm we will define $$\displaystyle \delta_j^l = \frac{\partial C(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b})}{\partial z_j^l}$$. 
 
@@ -257,9 +257,9 @@ This is the idea behind the backward pass of the backpropagation algorithm i.e. 
 
 ##### The Forward Pass
 
-To calculate our gradients, we will need to store the activations of every layer in the network. It is important to note, to reduce the number of computations when calculating the derivatives of the activation function, we will also want to store the z's of every layer.
+To calculate our gradients, we will need to store the activations of every layer in the network. It is important to note, to reduce the number of computations when calculating the derivatives of the activation function, we will also want to store the $$z$$'s of every layer.
 
-Furthermore, we must store these activations and z's of every layer before doing the backward pass. This is where the forward pass comes from. We take our initialized or updated weights and biases and propagate them forward through the network to calculate and store the actiavtions and z's. Then, we have what we need to perform the backward pass through the network to obtain the gradients of the weights and biases for each layer.
+Furthermore, we must store these activations and $$z$$'s of every layer before doing the backward pass. This is where the forward pass comes from. We take our initialized or updated weights and biases and propagate them forward through the network to calculate and store the actiavtions and $$z$$'s. Then, we have what we need to perform the backward pass through the network to obtain the gradients of the weights and biases for each layer.
 
 #### Stochastic Gradient Descent-
 
@@ -427,7 +427,7 @@ def initialize(sizes):
   return num_layers, biases, weights
 ```
 
-The next two functions perform backpropagation. The following function computes the activations and z's for each layer in the network using the most recent weights and biases. This is the forward pass through the network.
+The next two functions perform backpropagation. The following function computes the activations and $$z$$'s for each layer in the network using the most recent weights and biases. This is the forward pass through the network.
 
 
 ```python

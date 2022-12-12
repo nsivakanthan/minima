@@ -590,7 +590,7 @@ sgd(20, 10, .01, num_layers, biases, weights, X_train, Y_train, X_test, y_test)
     
 
 
-Looking at the confusion matrix, it seems that the network is confusing many of the 1's with 9's. Overall, this network is performing well.
+Looking at the confusion matrix, it seems that the network is confusing many of the 1's with 9's. Many numbers are confused for 8's, 5's, and 1's. Some of these do not make much sense, for example 4's being confused for 8's. Overall, this network is performing well.
 
 Finally, we have completed our neural network from scratch!
 

@@ -32,13 +32,13 @@ To investigate whether CO2 emissions impact the frequency or severity of natural
 
 ![Top 15 CO2 Emitters](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img1.png#center 'Top 15 CO2 Emitters')
 
-$$\textFig 1: Top 15 Countries in CO2 Emissions in 2021$$ 
+$$\text{Fig 1: Top 15 Countries in CO2 Emissions in 2021}$$ 
 
 To get a better sense of yearly CO2 emissions, we show CO2 emissions in metric tons per capita for a select few countries for each year from 1960 to 2020. Countries were chosen to show a range of CO2 emitters. In addition, we selected countries that are interesting to compare to the US such as China and India. Most importantly, we include a dotted line representing the global median emissions each year. This upward trending dotted line indicates that over time, CO2 emissions have been increasing worldwide. What we would like to do next is compare this trend to the occurrence of natural disasters in the US. 
  
 ![Yearly CO2 Emissions for Countries](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img2.png#center 'Yearly CO2 Emissions for Countries') 
 
-$$\textFig 2: Yearly CO2 Emissions for Countries$$ 
+$$\text{Fig 2: Yearly CO2 Emissions for Countries}$$ 
  
 #### The Human Cost: Frequency and Severity of Natural Disasters -
 

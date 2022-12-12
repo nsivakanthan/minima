@@ -323,8 +323,7 @@ from sklearn import datasets
 import random
 
 # Model metrics
-from sklearn.metrics import ConfusionMatrixDisplay
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 ```
 
 #### Loading and Cleaning Data-
@@ -342,7 +341,7 @@ for ax, image, label in zip(axes, digits.images, digits.target):
 
 
     
-![png](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/assets/output_48_0.png 'output')
+![png](output_48_0.png)
     
 
 
@@ -515,7 +514,7 @@ def eval(test_data, biases, weights):
   return sum(int(x == y) for (x, y) in test_results)
 ```
 
-Here is the main function. It will first group together the training and test data from the inputs 'X_train', 'y_train', 'X_test', 'Y_test'. Then, it will shuffle the training data to create mini-batches of size specified by the user input into the function. For each mini-batch, backpropagation and gradient descent will be performed and used to update the weights and biases for the next mini-batch. After all mini-batches are completed, those updated weights and biases are used to test the data. The output of this test is printed. This completes one epoch and the process is repeated for the number of epochs specified by the user input into the function.
+Here is the main function. It will first group together the training and test data from the inputs 'X_train', 'y_train', 'X_test', 'Y_test'. Then, it will shuffle the training data to create mini-batches of size specified by the user input into the function. For each mini-batch, backpropagation and gradient descent will be performed and used to update the weights and biases for the next mini-batch. After all mini-batches are completed, those updated weights and biases are used to test the data. The output of this test is printed. This completes one epoch and the process is repeated for the number of epochs specified by the user input into the function. Once all epochs are complete, a confusion matrix is printed out using the final predictions on the testing data from the trained network.
 
 
 ```python
@@ -542,6 +541,10 @@ def sgd(epochs, mini_batch_size, learning_rate, num_layers, biases, weights, X_t
                                                           , np.round(eval(test_data, biases, weights)/n_test, 4)))
     else:
       print("Epoch {0} complete".format(j))
+  y_pred = np.asarray([(np.abs(network_output(x, biases, weights) - 1)).argmin() for x in X_test])
+  cm = confusion_matrix(y_test, y_pred)
+  cmd = ConfusionMatrixDisplay(cm)
+  cmd.plot()
 ```
 
 Here we initialize a network with three layers. The size of a single input is 64, therefore this is the size of the first layer. There are 10 digits that are possible outputs, therefore this is the size of the final layer. 
@@ -559,27 +562,36 @@ num_layers, biases, weights = initialize(sizes)
 sgd(20, 10, .01, num_layers, biases, weights, X_train, Y_train, X_test, y_test)
 ```
 
-    Epoch 0: 146/360  accuracy = 0.4056
-    Epoch 1: 195/360  accuracy = 0.5417
-    Epoch 2: 244/360  accuracy = 0.6778
-    Epoch 3: 271/360  accuracy = 0.7528
-    Epoch 4: 284/360  accuracy = 0.7889
-    Epoch 5: 295/360  accuracy = 0.8194
+    Epoch 0: 173/360  accuracy = 0.4806
+    Epoch 1: 230/360  accuracy = 0.6389
+    Epoch 2: 264/360  accuracy = 0.7333
+    Epoch 3: 281/360  accuracy = 0.7806
+    Epoch 4: 282/360  accuracy = 0.7833
+    Epoch 5: 296/360  accuracy = 0.8222
     Epoch 6: 305/360  accuracy = 0.8472
-    Epoch 7: 307/360  accuracy = 0.8528
-    Epoch 8: 308/360  accuracy = 0.8556
-    Epoch 9: 312/360  accuracy = 0.8667
-    Epoch 10: 313/360  accuracy = 0.8694
-    Epoch 11: 313/360  accuracy = 0.8694
-    Epoch 12: 314/360  accuracy = 0.8722
-    Epoch 13: 314/360  accuracy = 0.8722
-    Epoch 14: 317/360  accuracy = 0.8806
-    Epoch 15: 318/360  accuracy = 0.8833
-    Epoch 16: 319/360  accuracy = 0.8861
-    Epoch 17: 319/360  accuracy = 0.8861
-    Epoch 18: 319/360  accuracy = 0.8861
-    Epoch 19: 319/360  accuracy = 0.8861
+    Epoch 7: 309/360  accuracy = 0.8583
+    Epoch 8: 312/360  accuracy = 0.8667
+    Epoch 9: 311/360  accuracy = 0.8639
+    Epoch 10: 315/360  accuracy = 0.875
+    Epoch 11: 316/360  accuracy = 0.8778
+    Epoch 12: 316/360  accuracy = 0.8778
+    Epoch 13: 317/360  accuracy = 0.8806
+    Epoch 14: 318/360  accuracy = 0.8833
+    Epoch 15: 317/360  accuracy = 0.8806
+    Epoch 16: 318/360  accuracy = 0.8833
+    Epoch 17: 318/360  accuracy = 0.8833
+    Epoch 18: 318/360  accuracy = 0.8833
+    Epoch 19: 320/360  accuracy = 0.8889
     
+
+
+    
+![png](output_79_1.png)
+    
+
+
+Looking at the confusion matrix, it seems that the network is confusing many of the 1's with 9's. Overall, this network is performing well.
+
 Finally, we have completed our neural network from scratch!
 
 #### References:

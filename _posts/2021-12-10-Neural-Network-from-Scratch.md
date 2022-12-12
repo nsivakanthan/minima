@@ -6,7 +6,7 @@ Here I will go over how to make a multi-layer perceptron neural network from scr
 
 #### Network Notation-
 
-Neuron activations are denoted ##a_j^l##, where the superscript ##l## is the layer and the subscript ##j## denotes the neuron index within that layer.
+Neuron activations are denoted $$a_j^l$$, where the superscript $$l$$ is the layer and the subscript ##j## denotes the neuron index within that layer.
 
 The first layer is the input data itself ##\mathbf{a}^1 = \mathbf{x}_i##.
 

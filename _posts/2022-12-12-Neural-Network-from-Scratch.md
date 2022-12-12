@@ -341,7 +341,7 @@ for ax, image, label in zip(axes, digits.images, digits.target):
 
 
     
-![png](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/assets/output_48_0.png 'data')
+-> ![png](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/assets/output_48_0.png 'data') <-
     
 
 

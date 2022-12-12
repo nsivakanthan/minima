@@ -69,11 +69,11 @@ speed at which the boosting model reduces error.
 First, we use a random forest model to predict TENURE using the subset of predictors we chose. Here is
 a confusion matrix of the results of the trained model on the testing data:
 
-![Fig1](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig1.JPG 'Fig1')
+![Fig1](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig1.JPG#center 'Fig1')
 
 This model predicted TENURE without any errors. Here is a plot showing the importance of predictors in this model:
 
-![Fig2](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig2.JPG 'Fig2')
+![Fig2](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig2.JPG#center 'Fig2')
 
 From this plot, we can see there are a few predictors that highly influence the results of the model:
 RENT, MARKETVAL, and HOWBUY.
@@ -87,7 +87,7 @@ After removing the three predictors RENT, MARKETVAL, and HOWBUY from considerati
 another random forest model. Here is a confusion matrix of the results of the trained model on the
 testing data to predict TENURE:
 
-![Fig3](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig3.JPG 'Fig3')
+![Fig3](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig3.JPG#center 'Fig3')
 
 This model had an accuracy of approximately 93%. Most notably, the model has trouble predicting the
 third class in the TENURE variable.
@@ -95,7 +95,7 @@ third class in the TENURE variable.
 Now, we train a boosting model using the same predictors to predict TENURE. Here is a confusion matrix
 of the results of the trained model on the testing data:
 
-![Fig4](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig4.JPG 'Fig4')
+![Fig4](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig4.JPG#center 'Fig4')
 
 This time, the model did not predict anyone to be in class 3 and this model did worse than the random
 forest model in predicting class 1 & 2. We assume this is because of the parameters we chose for the
@@ -110,7 +110,7 @@ We were able to train a better boosting model by changing the depth to 3 and inc
 parameter to .1. By increasing the shrinkage parameter, we will require less trees to obtain lower error.
 Here is a confusion matrix of the results of the trained model on the testing data using 5000 trees:
 
-![Fig5](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig5.JPG 'Fig5')
+![Fig5](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Classify-Homeownership/fig5.JPG#center 'Fig5')
 
 This model improves the accuracy to 93.15%, most notably this model does the best at predicting class 1
 & 3 at the expense of doing slightly worse at predicting class 2.

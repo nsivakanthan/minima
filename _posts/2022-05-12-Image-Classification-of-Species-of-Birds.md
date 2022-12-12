@@ -25,13 +25,13 @@ transformations to each layer’s input ultimately providing us with an output. 
 our input layer and the more hidden layers we filter through, the more complex the neural
 network gets.
 
-![Fig1](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Image-Classification-Birds/fig1.JPG 'Fig1')
+![Fig1](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Image-Classification-Birds/fig1.JPG#center 'Fig1')
 
 Each layer consists of nodes that establish linear connections between nodes of other layer(s). The hidden layers have nonlinear activation functions that compute the linear transformations used to connect nodes between layers. There are various activation functions that are convenient to use in these hidden layers because of their computational ease, particularly regarding their differentiability. 
 
 #### Convolution Neural Networks (CNN) –
 
-![Fig2](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Image-Classification-Birds/fig2.JPG 'Fig2')
+![Fig2](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Image-Classification-Birds/fig2.JPG#center 'Fig2')
 
 Convolution Neural Networks are useful for image classification problems. These networks use
 a convolution layer to discover patterns or features in the image inputs. For each image, the
@@ -50,7 +50,7 @@ number of filters.
 
 Below is a table with a description of each of these parameters.
 
-![Fig3](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Image-Classification-Birds/fig3.JPG 'Fig3')
+![Fig3](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Image-Classification-Birds/fig3.JPG#center 'Fig3')
 
 ### Methodology:
 
@@ -82,7 +82,7 @@ This model achieves 49.44% accuracy on the testing data.
 
 Next, we train models that change certain parameters to see its effect on the testing accuracy compared to the testing accuracy of the baseline model. The table below summarizes this process.
 
-![Fig4](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Image-Classification-Birds/fig4.JPG 'Fig4')
+![Fig4](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Image-Classification-Birds/fig4.JPG#center 'Fig4')
 
 The parameters chosen in the baseline model seem to be close to optimal. With more Epochs we can slightly increase the accuracy of the model on the testing data. 
 

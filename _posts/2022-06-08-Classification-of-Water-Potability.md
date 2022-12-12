@@ -49,7 +49,7 @@ factor of s. So, s is called the singular value corresponding to the respective 
 only works with numeric values and is effective in imputing the missing values using the underlying data
 correlation structures.
 
-![Fig1](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig1.JPG 'Fig1')
+![Fig1](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig1.JPG#center 'Fig1')
 
 #### Principal Component Analysis (PCA)-
 
@@ -84,7 +84,7 @@ classification, this model calculates the conditional probability P (Y|X) of the
 independent variable(s) X. Where P (Y|X) is a sigmoid function applied to a linear combination of input
 features. As a result, it produces a logistic curve, where values are limited between 0 and 1, using the logodds function as shown in figure 2.
 
-![Fig2](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig2.JPG 'Fig2')
+![Fig2](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig2.JPG#center 'Fig2')
 
 #### Random Forest Classification-
 
@@ -144,7 +144,7 @@ the principal components when training models. However, we did learn that the fi
 component (the component accounting for the most variability in the dataset) had high weightings for
 the pH, sulfate, and conductivity variables.
 
-![Fig3](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig3.JPG 'Fig3')
+![Fig3](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig3.JPG#center 'Fig3')
 
 #### Classification: Logistic Regression-
 
@@ -156,7 +156,7 @@ point. However, because it is classifying almost everything as non-potable, the 
 is extremely high (99.8%). However, because it is almost exclusively predicting samples as not potable,
 it’s not a very useful model because we do want to identify some sources of drinking water.
 
-![Fig4](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig4.JPG 'Fig4')
+![Fig4](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig4.JPG#center 'Fig4')
 
 #### Classification: Random Forest Classifier-
 
@@ -170,9 +170,9 @@ compared with the logistic regression model. In this context, we would like to b
 with predicting whether water is not potable. The measure of specificity shows that for approximately
 89% of the samples that were not potable, this model correctly predicted it to be not potable.
 
-![Fig5](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig5.JPG 'Fig5')
+![Fig5](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig5.JPG#center 'Fig5')
 
-![Fig6](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig6.JPG 'Fig6')
+![Fig6](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig6.JPG#center 'Fig6')
 
 We also want to the accuracy of predicting potability using the most important variables found
 from PCA. Next, we trained the random forest classifier only using pH, Sulfate, and Conductivity as
@@ -180,7 +180,7 @@ predictors. The confusion matrix and performance statistics for the results of t
 testing data can be seen in Figure 6. This model performs poorer compared to the model with all
 predictors, however it still has a high specificity.
 
-![Fig7](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig7.JPG 'Fig7')
+![Fig7](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig7.JPG#center 'Fig7')
 
 #### Classification: K-Nearest Neighbors-
 
@@ -190,9 +190,9 @@ accuracy for this model was 64.94%, and therefore a test error of 35.06%. As you
 obtained higher specificity with this model compared to the others, accurately classifying 90.5% of the
 non-potable samples in the dataset.
 
-![Fig8](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig8.JPG 'Fig8')
+![Fig8](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig8.JPG#center 'Fig8')
 
-![Fig9](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig9.JPG 'Fig9')
+![Fig9](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig9.JPG#center 'Fig9')
 
 Next, we will train KNN using fewer predictors. Again, we choose the predictors that appeared
 most important from the PCA analysis, pH, Sulfate, and Conductivity. See Figure 9 for a confusion matrix
@@ -200,7 +200,7 @@ of the results of the best model on the testing data. This model provides us wit
 considering we only use three predictors. In terms of specificity, it outperforms the best random forest
 classifier model and is nearly equivalent to the KNN model with all predictors.
 
-![Fig10](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig10.JPG 'Fig10')
+![Fig10](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Water-Potability/fig10.JPG#center 'Fig10')
 
 ### Discussion:
 

@@ -50,7 +50,7 @@ terms of Euclidian distance. Each of the k groups has a centroid and membership 
 is determined by a points distance to each centroid. The centroids serve as a computationally
 convenient way to minimize the distance between points within a group.
 
-![Fig1](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig1.JPG 'Fig1')
+![Fig1](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig1.JPG#center 'Fig1')
 
 Performing k-means clustering requires initialization of k random points for the initial centroids.
 Then, we determine which groups points are allocated to based on their distance to these
@@ -80,24 +80,24 @@ Once the data is prepped with the missing data imputed, PCA can be performed. He
 of the proportion of variance explained by the data per principal component and a cumulative
 sum plot, respectively.
 
-![Fig2](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig2.JPG 'Fig2')
+![Fig2](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig2.JPG#center 'Fig2')
 
 We will zoom in to get a better idea of the proportion of variance explained for the first 200
 principal components.
 
-![Fig3](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig3.JPG 'Fig3')
+![Fig3](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig3.JPG#center 'Fig3')
 
 Below is a table of some numbers of principal components and their corresponding cumulative sum of
 proportion of variance explained by the data:
 
-![Fig4](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig4.JPG 'Fig4')
+![Fig4](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig4.JPG#center 'Fig4')
 
 These plots and table indicate a significant portion of the variance can be explained by 20-50 principal
 components, but for more accuracy a greater number of principal components can be considered.
 
 Below is a table of the weights of the first 20 observations for the first three principal components:
 
-![Fig5](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig5.JPG 'Fig5')
+![Fig5](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig5.JPG#center 'Fig5')
 
 This table shows us that there are certain positions and values on these COVID genetic sequences that
 could potentially indicate which variant of COVID the individual had or even help trace the origins of
@@ -110,13 +110,13 @@ variants that are prevalent in Washington state. We will start with k = 4.
 
 The following is a graph of the first two principal components and the four clusters resulting from kmeans each labeled by color:
 
-![Fig6](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig6.JPG 'Fig6')
+![Fig6](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig6.JPG#center 'Fig6')
 
 From only two principal components, it appears that the purple cluster does not seem to be much
 different from the other clusters. However, if we also plot PC3, we get a better picture of the
 differences.
 
-![Fig7](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig7.JPG 'Fig7')
+![Fig7](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig7.JPG#center 'Fig7')
 
 These are different orientations of the same plot of the first three principal components and the four
 clusters resulting from k-means.
@@ -127,13 +127,13 @@ away.
 
 Next, we will try k-means clustering with k = 5.
 
-![Fig8](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig8.JPG 'Fig8')
+![Fig8](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig8.JPG#center 'Fig8')
 
 Here, some of the observations that appeared as outliers before are now grouped together in their own
 cluster. Again, it will be easier to distinguish these points when viewing the first three principal
 components.
 
-![Fig9](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig9.JPG 'Fig9')
+![Fig9](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-COVID-DNA-Sequences/fig9.JPG#center 'Fig9')
 
 Again, these are different orientations of the same plot of the first three principal components, but now
 for five clusters resulting from k-means. Here it is easier to see the sequences that appear far away from

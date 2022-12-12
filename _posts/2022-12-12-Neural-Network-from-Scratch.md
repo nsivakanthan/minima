@@ -580,6 +580,7 @@ sgd(20, 10, .01, num_layers, biases, weights, X_train, Y_train, X_test, y_test)
     Epoch 18: 319/360  accuracy = 0.8861
     Epoch 19: 319/360  accuracy = 0.8861
     
+Finally, we have completed our neural network from scratch!
 
 #### References:
 

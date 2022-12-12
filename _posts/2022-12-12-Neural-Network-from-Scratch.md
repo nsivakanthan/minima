@@ -341,7 +341,7 @@ for ax, image, label in zip(axes, digits.images, digits.target):
 
 
     
--> ![png](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/assets/output_48_0.png 'data') <-
+![png](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/assets/output_48_0.png#center 'data')
     
 
 
@@ -586,7 +586,7 @@ sgd(20, 10, .01, num_layers, biases, weights, X_train, Y_train, X_test, y_test)
 
 
     
-![png](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/assets/output_79_1.png 'Confusion Matrix')
+![png](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/assets/output_79_1.png#center 'Confusion Matrix')
     
 
 

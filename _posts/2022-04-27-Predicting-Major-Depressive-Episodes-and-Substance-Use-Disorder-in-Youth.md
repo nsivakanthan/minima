@@ -78,12 +78,12 @@ questions to predict an individual’s answers to two questions.
 The following table includes the names, descriptions, and class descriptions of the variables chosen to
 classify in our models:
 
-![Fig1](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig1.JPG 'Fig1')
+![Fig1](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig1.JPG#center 'Fig1')
 
 The following table includes a sample of the names and descriptions of predictors used to classify the
 variables in the previous table:
 
-![Fig2](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig2.JPG 'Fig2')
+![Fig2](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig2.JPG#center 'Fig2')
 
 ### Results:
 
@@ -99,7 +99,7 @@ Tuning for the C parameter on the training data, the model with the highest accu
 accuracy of this model is 79.54% on the testing data. Here is a confusion matrix of the results of the
 model on the testing data:
 
-![Fig3](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig3.JPG 'Fig3')
+![Fig3](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig3.JPG#center 'Fig3')
 
 The overall accuracy of this model is good. However, it is important to note the accuracy of predicting
 class 1 is 26.16% (we refer to this as Recall), and of those the model predicts to be in class 1, 60.14% are
@@ -113,7 +113,7 @@ This time we tune for three parameters on the training data: C, gamma, and degre
 highest accuracy has C = 1, gamma = 2, and degree = 1. The accuracy of this model is 78.03% on the
 testing data. Here is a confusion matrix of the results of the model on the testing data:
 
-![Fig4](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig4.JPG 'Fig4')
+![Fig4](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig4.JPG#center 'Fig4')
 
 With this model, the recall is 12.6% and the precision is 54.54% for class 1.
 
@@ -125,7 +125,7 @@ This time we tune for two parameters on the training data, C and gamma. The mode
 accuracy has C = 1 and gamma = 2. The accuracy of this model is 78.03% on the testing data. Here is a
 confusion matrix of the results of the model on the testing data:
 
-![Fig5](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig5.JPG 'Fig5')
+![Fig5](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig5.JPG#center 'Fig5')
 
 With this model, the recall is 12.6% and the precision is 54.54% for class 1.
 
@@ -140,13 +140,13 @@ Tuning for the C parameter on the training data, the model with the highest accu
 accuracy of this model is 77.80% on the testing data. Here is a confusion matrix of the results of the
 model on the testing data:
 
-![Fig6](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig6.JPG 'Fig6')
+![Fig6](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig6.JPG#center 'Fig6')
 
 Again, like with the binary classifier, we consider not just the overall accuracy of the model in our
 analysis. In addition, we will compare recall and precision for each class. The following table indicates
 the recall and precision values of each class.
 
-![Fig7](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig7.JPG 'Fig7')
+![Fig7](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig7.JPG#center 'Fig7')
 
 ##### SVM (polynomial kernel) -
 
@@ -156,7 +156,7 @@ We tune for three parameters on the training data: C, gamma, and degree. The mod
 accuracy has C = .001, gamma = 1, and degree = 1. The accuracy of this model is 77.56% on the testing
 data. Here is a confusion matrix of the results of the model on the testing data:
 
-![Fig8](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig8.JPG 'Fig8')
+![Fig8](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig8.JPG#center 'Fig8')
 
 Notably, this model predicts each youth as belonging to class 4. This model has the highest accuracy of
 any model due to the imbalance of youth in this class. This model is clearly not ideal to use.
@@ -178,12 +178,12 @@ Fitting an SVC model with C = 100 on the training data, we can achieve better re
 every class. The accuracy of this model is 77.59%. Here is the confusion matrix of the results of the
 model on the training data:
 
-![Fig9](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig9.JPG 'Fig9')
+![Fig9](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig9.JPG#center 'Fig9')
 
 Now, our model is predicting more individuals in each of the classes. The following table indicates the
 recall and precision values of each class
 
-![Fig10](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig10.JPG 'Fig10')
+![Fig10](https://raw.githubusercontent.com/nsivakanthan/ML-Research-Papers/main/Figures-Major-Depressive-Episodes-Substance-Abuse-In-Youth/fig10.JPG#center 'Fig10')
 
 ### Conclusion:
 

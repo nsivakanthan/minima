@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/images/pexels-george-desipris-753619.jpg 'Banner')
+![Banner](https://raw.githubusercontent.com/nsivakanthan/nsivakanthan.github.io/master/images/pexels-george-desipris-753619.jpg#center 'Banner')
 
 By: Nitharsan Sivakanthan, Prateek Kakkar, Ramgopal Reddy Putta
 
@@ -30,15 +30,15 @@ After the data preparation is performed, a statistical visualization python libr
 
 To investigate whether CO2 emissions impact the frequency or severity of natural disasters, we will first look at global trends in CO2 emissions. Fig 1 shows CO2 emissions in metric tons per capita in 2021 for the top 15 countries. It is important to note the US is among the top CO2 emitters. 
 
-![Top 15 CO2 Emitters](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img1.png 'Top 15 CO2 Emitters')
+![Top 15 CO2 Emitters](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img1.png#center 'Top 15 CO2 Emitters')
 
-Fig 1: Top 15 Countries in CO2 Emissions in 2021 
+$$\textFig 1: Top 15 Countries in CO2 Emissions in 2021$$ 
 
 To get a better sense of yearly CO2 emissions, we show CO2 emissions in metric tons per capita for a select few countries for each year from 1960 to 2020. Countries were chosen to show a range of CO2 emitters. In addition, we selected countries that are interesting to compare to the US such as China and India. Most importantly, we include a dotted line representing the global median emissions each year. This upward trending dotted line indicates that over time, CO2 emissions have been increasing worldwide. What we would like to do next is compare this trend to the occurrence of natural disasters in the US. 
  
-![Yearly CO2 Emissions for Countries](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img2.png 'Yearly CO2 Emissions for Countries') 
+![Yearly CO2 Emissions for Countries](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img2.png#center 'Yearly CO2 Emissions for Countries') 
 
-Fig 2: Yearly CO2 Emissions for Countries 
+$$\textFig 2: Yearly CO2 Emissions for Countries$$ 
  
 #### The Human Cost: Frequency and Severity of Natural Disasters -
 
@@ -56,19 +56,19 @@ Fig 4: Global Map for Affected per Million
  
 Now, we will shift from looking at the frequency of natural disasters to their severity over time. Fig 5 shows the top 5 countries with the most people affected by natural disasters in the most recent two decades. While the number for countries like China and India are five to ten times more than the US, the people affected in the US is still among the top 5 in the world. 
  
-![Top 5 Most Affected Countries](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img5.png 'Top 5 Most Affected Countries') 
+![Top 5 Most Affected Countries](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img5.png#center 'Top 5 Most Affected Countries') 
 
 Fig 5: Top 5 Most Affected Countries 
  
 Next, we will look at how the severity of natural disasters has changed over time. We compare global trends to the trends in the US. Fig 6 shows yearly totals of people affected by natural disasters globally and for the US. Both show us increasing trends in people affected over time.  
  
-![Number of People Affected Globally and in the US](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img6.png 'Number of People Affected Globally and in the US')
+![Number of People Affected Globally and in the US](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img6.png#center 'Number of People Affected Globally and in the US')
 
 Fig 6: Number of People Affected Globally and in the US
  
 Fig 7 shows yearly totals of deaths by natural disasters globally and for the US. There does not appear to be any trend, however there are periods of time where natural disasters are more deadly. This likely has to do with factors such as population density of locations of the natural disasters and the degree of severity of the natural disaster.   
  
-![Number of Deaths Globally and in the US ](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img7.png 'Number of Deaths Globally and in the US ')  
+![Number of Deaths Globally and in the US ](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img7.png#center 'Number of Deaths Globally and in the US ')  
 
 Fig 7: Number of Deaths Globally and in the US 
  
@@ -85,19 +85,19 @@ Now, we switch our focus to how much the US is spending due to natural disasters
  
 As we noted before a disparity between types of natural disasters in the US, we will first look at the trends of dollars spent per disaster type from 1980 to 2022. In fig 9, we can see the trends of the cost of each disaster type during this time period. Although severe storms account for the highest count of disasters in the US, the type of disaster that can be the costliest are tropical cyclones. Costs of disasters highly depend on the individual disasters and their degree of severity.  
 
-![Trend lines for Cost (in millions of dollars) per disaster type](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img9.png 'Trend lines for Cost (in millions of dollars) per disaster type')
+![Trend lines for Cost (in millions of dollars) per disaster type](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img9.png#center 'Trend lines for Cost (in millions of dollars) per disaster type')
 
 Fig 9: Trend lines for Cost (in millions of dollars) per disaster type 
  
 We would like to compare the trend lines of median global CO2 emissions and cost of disasters in the US. Fig 10 shows us that both are increasing trends. There are significant fluctuations in the cost of disasters depending on the year. This is due to the individual severities of disasters occurring during those years. Despite this, the overall trend of the cost of disasters in the US is increasing.  
 
-![Yearly Global CO2 emissions and Yearly Cost of Disasters for the US](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img10.png 'Yearly Global CO2 emissions and Yearly Cost of Disasters for the US') 
+![Yearly Global CO2 emissions and Yearly Cost of Disasters for the US](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img10.png#center 'Yearly Global CO2 emissions and Yearly Cost of Disasters for the US') 
 
 Fig 10: Yearly Global CO2 emissions and Yearly Cost of Disasters for the US 
  
 Fig 11 explicitly shows the trend of cost of natural disasters in the US per unit of CO2 emissions globally. This trend line shows that over time the cost of CO2 emissions regarding damage from natural disasters has increased. We do have fluctuations in the cost per unit of CO2 emissions, but overall, the increasing trend is worrying. 
 
-![Yearly Cost per CO2 emissions](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img11.png 'Yearly Cost per CO2 emissions')
+![Yearly Cost per CO2 emissions](https://raw.githubusercontent.com/nsivakanthan/co2emissions-and-disasters/main/Vis-project-images/img11.png#center 'Yearly Cost per CO2 emissions')
 
 Fig 11: Yearly Cost per CO2 emissions for the US 
  

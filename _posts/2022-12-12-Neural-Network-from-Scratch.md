@@ -1,6 +1,6 @@
 By: Nitharsan Sivakanthan
     
-Here I will go over how to make a multi-layer perceptron neural network from scratch. The derivation of the backpropagation algorithm will also be included.
+Here I will go over how to make a multi-layer perceptron neural network from scratch. The derivation of the backpropagation algorithm will also be included. We will train the neural network on pictures of digits from sklearn's digit data set to classify a picture into a digit. 
 
 <!--more-->
 

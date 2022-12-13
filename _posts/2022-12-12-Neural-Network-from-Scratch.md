@@ -52,7 +52,9 @@ where $$\alpha > 0$$ is the learning rate.
 
 So, we need to compute partial derivatives $$\displaystyle \frac{\partial C_{av}}{\partial w^l_{ij}}$$ and $$\displaystyle \frac{\partial C_{av}}{\partial b^l_{j}}$$.
 
-Since $$C_{av}(\mathbf{w}, \mathbf{b}) = \frac{1}{n}\sum_{i = 1}^nC(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b}) = \frac{1}{n}\sum_{i = 1}^n\sum_{j = 1}^{N_L}C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})$$
+Since 
+
+$$C_{av}(\mathbf{w}, \mathbf{b}) = \frac{1}{n}\sum_{i = 1}^nC(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b}) = \frac{1}{n}\sum_{i = 1}^n\sum_{j = 1}^{N_L}C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})$$
 
 we will start by computing derivatives $$\displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial w^l_{ij}}$$ and $$\displaystyle \frac{\partial C(\mathbf{x}_i, y_{ij}; \mathbf{w}, \mathbf{b})}{\partial b^l_{j}}$$ and then we will sum the results over the output layer neurons and average over the training data.
 

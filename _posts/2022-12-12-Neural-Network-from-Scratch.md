@@ -23,7 +23,7 @@ The weights and biases for the entire network are written with bold symbols $$\m
 
 #### The Cost Function-
 
-The data consists of $n$ pairs of observations for the input $$\mathbf{x}_i$$ and desired output layer response $$\mathbf{y}_i$$.
+The data consists of $$n$$ pairs of observations for the input $$\mathbf{x}_i$$ and desired output layer response $$\mathbf{y}_i$$.
 
 The goal is for the output layer $$\mathbf{a}^L(\mathbf{x}_i) = \begin{bmatrix} a_j^L(\mathbf{x}_i) \\ a_j^L(\mathbf{x}_i) \\ \vdots \\ a_j^L(\mathbf{x}_i) \end{bmatrix}$$ activities to match the desired output $$\mathbf{y}_i = \begin{bmatrix} y_{i1} \\ y_{i2} \\ \vdots \\ y_{iN_L} \end{bmatrix}$$
 

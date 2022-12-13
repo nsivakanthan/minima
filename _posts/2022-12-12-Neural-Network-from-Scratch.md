@@ -35,6 +35,7 @@ $$C(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b}) = \sum_{j = 1}^{N_L}C(\m
 The cost might be a squared error or the cross-entropy loss.
 
 The total cost over all input-output pairs $$C_{av}(\mathbf{w}, \mathbf{b})$$ is the average cost over the data.
+
 $$C_{av}(\mathbf{w}, \mathbf{b}) = \frac{1}{n}\sum_{i = 1}^nC(\mathbf{x}_i, \mathbf{y}_i; \mathbf{w}, \mathbf{b})$$
 
 #### Gradient Descent-

@@ -226,9 +226,9 @@ Now, we have functions for the derivatives necessary to perform gradient descent
 
 Remember, the updates for the weights and biases are given by:
 
-$$w^l_{ij} \rightarrow w^l_{ij} - \alpha * \Delta w$$
+$$w^l_{ij} \rightarrow w^l_{ij} - \Delta w$$
 
-$$b^l_{j} \rightarrow b^l_{j} - \alpha * \Delta b$$
+$$b^l_{j} \rightarrow b^l_{j} - \Delta b$$
 
 Once we have the gradients, we can calculate $$\Delta w$$ and $$\Delta b$$ by averaging together weights and biases over all of the training data:
 

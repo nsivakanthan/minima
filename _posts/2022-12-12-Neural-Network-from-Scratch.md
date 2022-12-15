@@ -4,9 +4,17 @@ Here I will go over how to make a multi-layer perceptron neural network from scr
 
 <!--more-->
 
-### The Theory:
+Here are the videos that accompany the following material:
 
-{% include youtube_embed.html id="eWUpS_s-q50" %}  
+Part 1: The Theory
+
+{% include youtube_embed.html id="eWUpS_s-q50" %} 
+
+Part 2: The Code
+
+{% include youtube_embed.html id="TyBEhZoV0HY" %} 
+
+### The Theory: 
 
 #### Network Notation-
 
